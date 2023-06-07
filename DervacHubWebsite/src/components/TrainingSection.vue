@@ -25,7 +25,7 @@ export default defineComponent({
     </p>
     <div class="flex justify-between items-center mt-[24px] w-[161px] border border-gray-300 rounded-[15px] py-[12px] px-[16px]">
       <p class="text-[#344054] text-[18px] font-[400]">Learn more</p>
-      <img src="./Arrow-right.svg" alt="">
+      <img src="./LandingPage/Arrow-right.svg" alt="">
     </div>
 </div>
 </template>
