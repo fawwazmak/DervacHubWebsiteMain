@@ -5,7 +5,7 @@ import FirstSection from './firstsection.vue';
 
 
 export default defineComponent({
-    components:{fourth}
+    components:{fourth},
     components: {FirstSection}
 })
 </script>
