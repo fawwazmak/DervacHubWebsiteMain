@@ -55,7 +55,7 @@ export default defineComponent({
 
 <template>
   <div class="bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5]">
-    <Navbar class="sticky top-2 mx-auto left-0 right-0 w-[95%] mx-auto"/>
+    <Navbar class="sticky top-2 mx-auto left-0 right-0 w-[95%] mx-auto z-50"/>
      <component :is="currentPage"></component>
   </div>
  
