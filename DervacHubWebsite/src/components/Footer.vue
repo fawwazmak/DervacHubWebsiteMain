@@ -19,7 +19,7 @@ text-[#224c75] ">
             <div class="flex flex-col space-y-2">
 
                 <!-- logo -->
-                <div class="flex lg:w-[15%] w-[40%]">
+                <div class="flex">
                     <img src="../assets/images/dervac-main-logo.svg" alt="">
                     <img src="../assets/images/logo-complement.svg" alt="">
                 </div>
