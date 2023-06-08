@@ -15,7 +15,7 @@ export default defineComponent({
     <!-- blue #f2f6fb -->
     <!-- purple #f3e0e5 -->
 
-    <div class="grid md:grid-cols-2 grid-rows-2 text-center md:text-left md:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-20 md:px-24 px-8 items-center font-sans">
+    <div class="flex md:flex-row flex-col text-center md:text-left md:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-12 md:px-24 px-8 items-center font-sans">
         <div class="flex flex-col gap-8">
             <p class="md:text-[50px] font-extrabold text-[30px] text-[#224c75]">Learn, innovate and Thrive in the  <span class="text-[#d82e21]">Digital World</span></p>
 
