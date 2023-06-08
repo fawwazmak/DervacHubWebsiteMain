@@ -27,7 +27,7 @@
                 <p class="lg:text-2xl md:text-xl text-sm text-gray-500">We offer carefully organized training schedules that are tailored to meet the availability of our students and learners</p>
             </div>
             <div class="flex flex-col gap-20 md:flex-row">
-                <img src="./gentle-coder-in-training-schedule-section.svg" class="image md:w-[50%]" alt="">
+                <img src="./images/gentle-coder-in-training-schedule-section.svg" class="image md:w-[50%] z-0" alt="">
 
                 <div class=" w-full flex flex-col gap-8 md:justify-around">
                     <div class="w-full space-y-4" v-for="( trainings, index) in training"  :class="show ? 'bg-[#ffe8ec] p-4 rounded-xl' : 'bg-transparent'">
