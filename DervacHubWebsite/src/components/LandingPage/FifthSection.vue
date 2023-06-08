@@ -23,8 +23,8 @@
     <section id="fifth-section" class="h-fit px-16 py-20  w-full">
         <div class="space-y-6">
             <div class="space-y-4 lg:w-[70%] md:w-full">
-                <p class="lg:text-6xl md:text-4xl text-sm text-red-400">Training Schedule</p>
-                <p class="lg:text-2xl md:text-xl text-sm text-gray-500">We offer carefully organized training schedules that are tailored to meet the availability of our students and learners</p>
+                <p class="lg:text-5xl md:text-4xl text-sm text-red-600 font-bold">Training Schedules</p>
+                <p class="lg:text-xl md:text-xl text-sm text-gray-700">We offer carefully organized training schedules that are tailored to meet the availability of our students and learners</p>
             </div>
             <div class="flex flex-col gap-20 md:flex-row">
                 <img src="./images/gentle-coder-in-training-schedule-section.svg" class="image md:w-[50%] z-0" alt="">
