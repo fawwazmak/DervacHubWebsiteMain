@@ -92,7 +92,7 @@ export default defineComponent({
                 </div>
             </nav>
 
-            <div class="lg:hidden absolute bg-black h-[700px] w-screen left-[-14px] opacity-40 top-20" v-show="drop" @click="() => drop = !drop"></div>
+            <div class="lg:hidden absolute bg-black h-screen w-screen left-[-14px] opacity-40 top-20" v-show="drop" @click="() => drop = !drop"></div>
     </header>
 </template>
 
