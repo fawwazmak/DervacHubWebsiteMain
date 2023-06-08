@@ -19,8 +19,8 @@ export default defineComponent({
     <header class="bg-white px-8 py-4 rounded-xl">
             <nav class="flex justify-between align-center text-center lg:space-x-24 relative lg:static">  
             <!-- dervac Logo -->
-                <div id="logo" class="flex cursor-pointer">
-                    <img src="../assets/images/dervac-main-logo.svg" alt="">
+                <div id="logo" class="flex cursor-pointer lg:w-[15%] w-[40%]">
+                    <img src="../assets/images/dervac-main-logo.svg" alt="" class="md:w-[50px] w-[40%]">
                     <img src="../assets/images/logo-complement.svg" alt="">
                 </div>
 
