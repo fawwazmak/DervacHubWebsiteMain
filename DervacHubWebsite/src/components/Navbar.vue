@@ -17,19 +17,21 @@ export default defineComponent({
 
 <template>
     <header class="bg-white px-8 py-4 rounded-xl">
-            <nav class="flex justify-between align-center text-center lg:space-x-24 relative lg:static">  
+            <nav class="flex justify-between items-center text-center lg:space-x-24 relative lg:static">  
             <!-- dervac Logo -->
-                <div id="logo" class="flex cursor-pointer lg:w-[15%] w-[40%]">
-                    <img src="../assets/images/dervac-main-logo.svg" alt="" class="md:w-[50px] w-[40%]">
-                    <img src="../assets/images/logo-complement.svg" alt="">
-                </div>
 
+                <router-link to="/">
+                    <div id="logo" class="flex cursor-pointer md:w-[100%] h-full">
+                        <img src="./LandingPage/images/logo-complement-removebg-preview.png" alt="" class="md:w-[20%] w-[30px]">
+                        <img src="./LandingPage/images/dervac-main-logo-removebg-preview.png" alt="" class="md:w-[88%] w-[90px]">
+                    </div>
+                </router-link>
                 <!-- links to other pages -->
 
                 <div id="links" class="lg:flex list-none justify-between text-[14px] lg:gap-8 font-medium text-[#224c75] lg:relative lg:top-[0px] lg:left-[0px] absolute top-[70px] w-full lg:bg-white bg-[#f4dde2] rounded-xl lg:rounded-[0] z-50" :class="!drop ? 'left-[-1400px]' : 'left-[0]'" transition-right duration-900>
 
                 
-                    <li class="py-4 cursor-pointer">Fellowship</li>
+                    <li class="py-4 cursor-pointer"><router-link to="/fellowship">Fellowship</router-link></li>
                     <li class="py-4 cursor-pointer">Training</li>
                     <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
                         <div class="flex gap-4 w-fit mx-auto">

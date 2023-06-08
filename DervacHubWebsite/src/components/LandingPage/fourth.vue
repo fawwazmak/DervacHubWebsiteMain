@@ -1,5 +1,5 @@
 <template>
-   <div class="px-[70px] sm:px-[112px] py-[96px] bg-white">
+   <div class="px-6 py-[96px] bg-white">
     <div class="flex md:flex-row flex-col justify-between items-center">
       <p class="text-center sm:text-start text-[24px] lg:text-[30px] font-[600] text-[#224C75] h-fit leading-6">Dervac HUB Training Products</p>
       <button class="my-4 py-[12px] md:text-[16px] text-white md:my-0 px-[20px] bg-[#224C75] rounded-[15px]" >View all courses</button>

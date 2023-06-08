@@ -15,7 +15,7 @@ export default defineComponent({
     <!-- blue #f2f6fb -->
     <!-- purple #f3e0e5 -->
 
-    <div class="flex md:flex-row flex-col text-center md:text-left md:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-12 md:px-24 px-8 items-center font-sans">
+    <div class="flex lg:flex-row flex-col text-center lg:text-left md:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-12 md:px-24 px-8 items-center font-sans">
         <div class="flex flex-col gap-8">
             <p class="md:text-[50px] font-extrabold text-[30px] text-[#224c75]">Learn, innovate and Thrive in the  <span class="text-[#d82e21]">Digital World</span></p>
 
@@ -35,7 +35,7 @@ export default defineComponent({
                 </div>
 
                 <div class="flex md:flex-col gap-2 px-6 pt-7 pb-9 text-[#224c75]">
-                    <img class="w-[12%]"  src="./images/dervac-main-logo.svg" alt="">
+                    <img class="w-[20%]"  src="./images/logo-complement-removebg-preview.png" alt="">
 
                     <p><q>Gain the skills you need to land your dream job</q></p>
                 </div>
@@ -47,12 +47,13 @@ export default defineComponent({
                 </div>
 
                 <div class="flex md:flex-col gap-2 px-6 pt-7 pb-9 text-[#224c75]">
-                    <img class="w-[12%]" src="./images/dervac-main-logo.svg" alt="">
+                    <img class="w-[20%]" src="./images/logo-complement-removebg-preview.png" alt="">
 
                     <p><q>Get trained and mentored by industry experts</q></p>
                 </div>
             </div>
         </div>
+        
     </div>
 
 </template>
