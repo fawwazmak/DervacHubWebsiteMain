@@ -22,8 +22,8 @@ export default defineComponent({
             <p class="text-[#224c75] md:text-[20px] text-[15px]">Unlock your Digital potential with cutting-edge Traning in our Technology Hub </p>
 
             <div class="flex gap-12 md:flex-row flex-col">
-                <component is="Button" value="Become a tech expert" class="text-[15px] md:text-[35px] px-8 rounded-[10px] py-5 bg-[#224c75] text-white"></component>
-                <component is="Button" value="Testimonials" class="text-[15px] md:text-[35px] px-8 rounded-[10px] py-5 border border-[2px] text-[#344054]"></component>
+                <component is="Button" value="Become a tech expert" class="text-[15px] md:text-[18px] px-8 rounded-[10px] py-5 bg-[#224c75] text-white"></component>
+                <component is="Button" value="Testimonials" class="text-[15px] md:text-[18px] px-8 rounded-[10px] py-5 border border-[2px] text-[#344054]"></component>
             </div>
         </div>
 
@@ -31,11 +31,11 @@ export default defineComponent({
         <div class="flex gap-6 md:flex-row flex-col">
             <div class="bg-white flex flex-col gap-2 rounded-[10px]">
                 <div>
-                    <img src="./smiling-girl-in-hero-section.svg" alt="" class="w-[100%]">
+                    <img src="./images/smiling-girl-in-hero-section.svg" alt="" class="w-[100%]">
                 </div>
 
                 <div class="flex md:flex-col gap-2 px-6 pt-7 pb-9 text-[#224c75]">
-                    <img class="w-[12%]"  src="./dervac-main-logo.svg" alt="">
+                    <img class="w-[12%]"  src="./images/dervac-main-logo.svg" alt="">
 
                     <p><q>Gain the skills you need to land your dream job</q></p>
                 </div>
@@ -43,11 +43,11 @@ export default defineComponent({
 
             <div class="bg-white flex flex-col gap-2 rounded-[10px]">
                 <div>
-                    <img src="./mrAnjorin-image.svg" alt="" class="w-[100%]">
+                    <img src="./images/mrAnjorin-image.svg" alt="" class="w-[100%]">
                 </div>
 
                 <div class="flex md:flex-col gap-2 px-6 pt-7 pb-9 text-[#224c75]">
-                    <img class="w-[12%]" src="./dervac-main-logo.svg" alt="">
+                    <img class="w-[12%]" src="./images/dervac-main-logo.svg" alt="">
 
                     <p><q>Get trained and mentored by industry experts</q></p>
                 </div>
