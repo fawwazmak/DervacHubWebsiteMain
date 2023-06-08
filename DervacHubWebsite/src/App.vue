@@ -54,9 +54,13 @@ export default defineComponent({
     <!-- The tenth section will be done by ME which include start your career-->
 
 <template>
-  <Navbar />
+  <div class="bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5]">
+    <Navbar class="sticky top-2 mx-auto left-0 right-0 w-[95%] mx-auto"/>
+     <component :is="currentPage"></component>
+  </div>
+ 
 
-  <component :is="currentPage"></component>
+ 
 
   <Footer />
 </template>
