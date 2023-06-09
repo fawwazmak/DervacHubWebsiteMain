@@ -1,9 +1,10 @@
 <script>
 import { defineComponent } from 'vue';
 import Firstsection from '../LandingPage/firstsection.vue';
+import ThirdSection from './ThirdSection.vue';
 
 export default defineComponent({
-    components: {Firstsection}
+    components: {Firstsection, ThirdSection}
 })
 </script>
 
@@ -12,6 +13,7 @@ export default defineComponent({
 
 <template>
     <Firstsection />
+    <ThirdSection />
 </template>
 
 
