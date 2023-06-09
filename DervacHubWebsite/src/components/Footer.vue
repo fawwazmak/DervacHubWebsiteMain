@@ -9,7 +9,7 @@ export default defineComponent({
 
 
 <template>
-    <footer class="flex flex-col space-y-8 md:space-y-0 items-center md:flex-row justify-between bg-blue-100 py-8 md:p-20 text-[#224c75] 
+    <footer class="flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between bg-blue-100 py-8 md:p-20 text-[#224c75] 
 text-[#224c75] 
 text-[#224c75] 
 text-[#224c75] ">
@@ -19,7 +19,7 @@ text-[#224c75] ">
             <div class="flex flex-col space-y-2">
 
                 <!-- logo -->
-                <div class="flex lg:w-[15%] w-[40%]">
+                <div class="flex">
                     <img src="../assets/images/dervac-main-logo.svg" alt="">
                     <img src="../assets/images/logo-complement.svg" alt="">
                 </div>
@@ -74,8 +74,8 @@ text-[#224c75] ">
 
                 <!-- logo -->
                 <div class="flex w-[80%] mx-auto items-center">
-                    <img src="../assets/images/dervac-main-logo.svg" alt="" class="w-[23px]">
-                    <img src="../assets/images/logo-complement.svg" alt="" class="w-[110px]">
+                    <img src="./LandingPage/images/logo-complement-removebg-preview.png" alt="" class="w-[23px]">
+                    <img src="./LandingPage/images/dervac-main-logo-removebg-preview.png" alt="" class="w-[110px]">
                 </div>
 
                 <!-- social-media-links -->

@@ -2,14 +2,14 @@
 import { defineComponent } from 'vue';
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue';
-import MainLandingPage from './components/LandingPage/MainLandingPage.vue'
+import MainLandingPage from './components/LandingPage/MainLandingPage.vue';
+import router from './routes';
 
 
 export default defineComponent({
-  components: {Navbar, Footer, MainLandingPage},
+  components: {Navbar, Footer},
   data() {
     return {
-      currentPage: MainLandingPage,
     }
   }
 })
@@ -53,9 +53,9 @@ export default defineComponent({
     <!-- The tenth section will be done by ME which include start your career-->
 
 <template>
-  <div class="bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5]">
+  <div id="main" class="bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5]">
     <Navbar class="sticky top-2 mx-auto left-0 right-0 w-[95%] mx-auto z-50"/>
-     <component :is="currentPage"></component>
+     <router-view></router-view>
   </div>
  
 
