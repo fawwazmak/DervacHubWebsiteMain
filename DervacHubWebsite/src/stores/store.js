@@ -56,6 +56,11 @@ export default function elementStores() {
                     image: '/src/assets/testimonial-1.jpg'
                 },
             ]
+            showSummer: false,
+            showWeekend: false,
+            showRemote: false,
+            showWeekday: false,
+            showExecutive: false,
         })
     })()
 }
