@@ -5,6 +5,7 @@ import Footer from './components/Footer.vue';
 import MainLandingPage from './components/LandingPage/MainLandingPage.vue'
 
 
+
 export default defineComponent({
   components: {Navbar, Footer, MainLandingPage},
   data() {

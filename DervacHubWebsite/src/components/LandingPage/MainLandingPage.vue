@@ -20,7 +20,7 @@ export default defineComponent({
     <FirstSection />
     <sectionTwo />
     <fourth />
-    <FifthSection />    
+    <FifthSection />
     <SixthSection />
     <Seventh/>
 </template>
