@@ -6,7 +6,6 @@ import MainLandingPage from './components/LandingPage/MainLandingPage.vue';
 import router from './routes';
 
 
-
 export default defineComponent({
   components: {Navbar, Footer},
   data() {
