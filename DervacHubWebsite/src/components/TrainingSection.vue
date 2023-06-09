@@ -13,7 +13,7 @@ export default defineComponent({
 
 <template>
     <div class="p-[21px] border border-gray-300 rounded-[15px]">
-    <img src="./LandingPage/training-product-courses-image.svg" alt="" class="mx-auto">
+    <img src="./LandingPage/images/training-product-courses-image.svg" alt="" class="mx-auto">
     <div class="flex justify-between items-center pt-[30px]">
       <p class="text-[#026AA2] bg-[#F0F9FF] py-[2px] px-[10px] rounded-[16px]">Design</p>
       <p class="text-[#6941C6] text-[14px] font-[600]">6 months</p>
