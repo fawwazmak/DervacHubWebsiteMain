@@ -31,7 +31,7 @@ export default defineComponent({
                 <div id="links" class="lg:flex list-none justify-between text-[14px] lg:gap-8 font-medium text-[#224c75] lg:relative lg:top-[0px] lg:left-[0px] absolute top-[70px] w-full lg:bg-white bg-[#f4dde2] rounded-xl lg:rounded-[0] z-50" :class="!drop ? 'left-[-1400px]' : 'left-[0]'" transition-right duration-900>
 
                 
-                    <li class="py-4 cursor-pointer"><router-link to="/fellowship">Fellowship</router-link></li>
+                    <li class="py-4 cursor-pointer"><router-link to="/fellowshipPage">Fellowship</router-link></li>
                     <li class="py-4 cursor-pointer">Training</li>
                     <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
                         <div class="flex gap-4 w-fit mx-auto">
