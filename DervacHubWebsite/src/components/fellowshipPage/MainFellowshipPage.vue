@@ -1,9 +1,11 @@
 <script>
 import { defineComponent } from 'vue';
 import Firstsection from './FirstSection.vue';
+import Fourthsection from './FourthSection.vue';
+
 
 export default defineComponent({
-    components: {Firstsection}
+    components: {Firstsection,Fourthsection}
 })
 </script>
 
@@ -12,6 +14,7 @@ export default defineComponent({
 
 <template>
     <Firstsection />
+    <Fourthsection/>
 </template>
 
 
