@@ -55,7 +55,7 @@ export default function elementStores() {
                     speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo aspernatur iusto consequatur, enim quibusdam illum est accusantium repudiandae nihil autem eligendi eveniet illo? Reiciendis neque dignissimos voluptatem modi est at! Architecto deleniti sapiente, quia ab commodi veniam.',
                     image: '/src/assets/testimonial-1.jpg'
                 },
-            ]
+            ],
             showSummer: false,
             showWeekend: false,
             showRemote: false,

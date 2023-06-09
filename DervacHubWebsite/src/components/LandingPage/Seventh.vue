@@ -1,7 +1,7 @@
 <script>
 import { defineComponent } from 'vue';
 import elementStores from '../../stores/store';
-import { looseIndexOf } from '@vue/shared';
+// import { looseIndexOf } from '@vue/shared';
 
 export default defineComponent({
     data(){
