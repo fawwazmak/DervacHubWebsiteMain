@@ -35,6 +35,7 @@ export default function elementStores() {
             showRemote: false,
             showWeekday: false,
             showExecutive: false,
+            showAnswer: false,
         })
     })()
 }
