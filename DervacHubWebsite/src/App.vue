@@ -2,7 +2,6 @@
 import { defineComponent } from 'vue';
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue';
-import MainLandingPage from './components/LandingPage/MainLandingPage.vue';
 import router from './routes';
 
 

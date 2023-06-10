@@ -25,7 +25,7 @@ text-[#224c75] ">
                 </div>
 
                 <!-- social-media-links -->
-                <div class="flex space-x-6">
+                <div class="flex justify-between">
                     <img src="../assets/images/facebook-logo 1.svg" alt="">
                     <img src="../assets/images/Instagram-logo.svg" alt="">
                     <img src="../assets/images/twitter-logo.svg" alt="">
