@@ -20,6 +20,10 @@ export default defineComponent({
 
 
 <template>
+
+    <!-- all section are completed here, the section two that looks like it is missing is due to ABDULAZEEZ doing the two section giving to him in a section -->
+
+    
     <FirstSection />
     <sectionTwo />
     <fourth />
