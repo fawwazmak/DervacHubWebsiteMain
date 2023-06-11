@@ -74,8 +74,8 @@ export default defineComponent({
 
     <div class="md:w-[50%] md:px-0 px-6 md:mx-auto py-16 flex flex-col gap-12">
         <div class="text-center">
-            <p class="font-extrabold md:text-[40px] text-xl">Frequently asked questions</p>
-            <p class="sm:text-[20px]">Everything you need to know about Dervac</p>
+            <p class="font-extra8old md:text-[40px] text-[25px]">Frequently asked questions</p>
+            <p class="sm:text-[15px]">Everything you need to know about Dervac</p>
         </div>
 
         <div>
@@ -88,8 +88,8 @@ export default defineComponent({
 
 
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerOne ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">What Does Dervac Hub Do?</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="showFaqsAnswerOne">Dervac HUB is an initiative od Dervac Global Services Ltd non-profit partnership program that authorizes global universities and colleges to deliver industry-recognized Huawei Certification courses to students.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerOne ? 'text-left' : 'md:text-left text-center'">What Does Dervac Hub Do?</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="showFaqsAnswerOne">Dervac HUB is an initiative od Dervac Global Services Ltd non-profit partnership program that authorizes global universities and colleges to deliver industry-recognized Huawei Certification courses to students.</p>
                 </div>
             </div>
 
@@ -101,8 +101,8 @@ export default defineComponent({
                     <img src="./images/minus-icon-gray-color.svg" v-else alt="">
                 </div>
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerTwo ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">How Can I Enroll Into Dervac Hub Fellowship Program</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="showFaqsAnswerTwo">To embark on the enlightening Dervac Hub Fellowship Program, visit their website and explore the dedicated enrollment section. Fill out the online application form with your personal details, academic background, and a compelling statement of purpose. Ensure you meet the eligibility criteria and submit your application before the specified deadline.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerTwo ? 'text-left' : 'md:text-left text-center'">How Can I Enroll Into Dervac Hub Fellowship Program</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="showFaqsAnswerTwo">To embark on the enlightening Dervac Hub Fellowship Program, visit their website and explore the dedicated enrollment section. Fill out the online application form with your personal details, academic background, and a compelling statement of purpose. Ensure you meet the eligibility criteria and submit your application before the specified deadline.</p>
                 </div>
             </div>
 
@@ -113,8 +113,8 @@ export default defineComponent({
                     <img src="./images/minus-icon-gray-color.svg" v-else alt="">
                 </div>
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerThree ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">What Next After Registration?</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="showFaqsAnswerThree">After registration, prepare for an incredible journey ahead. Stay tuned for program updates and instructions. Connect with fellow participants through provided communication channels. Be ready to engage in enriching activities and seize opportunities for personal and professional growth. Embrace the possibilities that await you on this exciting path.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerThree ? 'text-left' : 'md:text-left text-center'">What Next After Registration?</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="showFaqsAnswerThree">After registration, prepare for an incredible journey ahead. Stay tuned for program updates and instructions. Connect with fellow participants through provided communication channels. Be ready to engage in enriching activities and seize opportunities for personal and professional growth. Embrace the possibilities that await you on this exciting path.</p>
                 </div>
             </div>
 
@@ -125,8 +125,8 @@ export default defineComponent({
                     <img src="./images/minus-icon-gray-color.svg" v-else alt="">
                 </div>
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerFour ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">What Happens If I Don't Pass The Assessment?</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="this.showFaqsAnswerFour">If you don't pass the assessment, fear not, for growth lies in resilience. Take the opportunity to reflect on areas for improvement. Seek guidance from mentors or resources provided by Dervac Hub. Embrace the chance to learn and reapply, for success often blooms from perseverance.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerFour ? 'text-left' : 'md:text-left text-center'">What Happens If I Don't Pass The Assessment?</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="this.showFaqsAnswerFour">If you don't pass the assessment, fear not, for growth lies in resilience. Take the opportunity to reflect on areas for improvement. Seek guidance from mentors or resources provided by Dervac Hub. Embrace the chance to learn and reapply, for success often blooms from perseverance.</p>
                 </div>
             </div>
 
@@ -138,8 +138,8 @@ export default defineComponent({
                     <img src="./images/minus-icon-gray-color.svg" v-else alt="">
                 </div>
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerFive ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">When Will Class For The First Cohort Start?</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="showFaqsAnswerFive">The eagerly awaited first cohort classes will commence soon. Stay tuned for official announcements and program schedules. Keep an eye on your email or the Dervac Hub website for updates. Prepare yourself for an immersive learning experience that will ignite your journey toward greatness.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerFive ? 'text-left' : 'md:text-left text-center'">When Will Class For The First Cohort Start?</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="showFaqsAnswerFive">The eagerly awaited first cohort classes will commence soon. Stay tuned for official announcements and program schedules. Keep an eye on your email or the Dervac Hub website for updates. Prepare yourself for an immersive learning experience that will ignite your journey toward greatness.</p>
                 </div>
             </div>
 
@@ -151,8 +151,8 @@ export default defineComponent({
                     <img src="./images/minus-icon-gray-color.svg" v-else alt="">
                 </div>
                 <div class="w-[90%] flex flex-col gap-4 md:text-left text-center" :class="showFaqsAnswerSix ? 'bg-blue-50 p-6' : 'bg-none'">
-                    <p class="font-semibold text-[10px] sm:text-[18px]">How Long Is The Fellowship Program?</p>
-                    <p class="text-[9px] sm:text-[20px] font-medium" v-show="showFaqsAnswerSix">The Fellowship Program spans a transformative journey of eight months. Brace yourself for an intensive and rewarding experience. Engage in immersive learning, mentorship, and personal growth activities. Embrace the opportunity to delve deep into your field and emerge as a well-rounded professional.</p>
+                    <p class="font-semibold text-[13px] sm:text-[18px]" :class="showFaqsAnswerSix ? 'text-left' : 'md:text-left text-center'">How Long Is The Fellowship Program?</p>
+                    <p class="text-[9px] sm:text-[15px] font-medium" v-show="showFaqsAnswerSix">The Fellowship Program spans a transformative journey of eight months. Brace yourself for an intensive and rewarding experience. Engage in immersive learning, mentorship, and personal growth activities. Embrace the opportunity to delve deep into your field and emerge as a well-rounded professional.</p>
                 </div>
             </div>
         </div>
