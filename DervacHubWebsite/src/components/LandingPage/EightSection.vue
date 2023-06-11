@@ -1,9 +1,11 @@
 <script>
 import { defineComponent } from 'vue';
 import elementStores from '../../stores/store';
+import Button from '../Button.vue';
 
 
 export default defineComponent({
+    components: {Button},
     data () {
         return {
             showFaqsAnswerOne: elementStores().$state.showAnswer,
@@ -156,7 +158,8 @@ export default defineComponent({
         </div>
 
         <div class="text-center">
-            <button class="bg-gray-200 px-[1.5em] py-[0.5em] font-bold rounded-[5px]" >See more</button>
+            <!-- <button class="bg-gray-200 px-[1.5em] py-[0.5em] font-bold rounded-[5px]" >See more</button> -->
+            <Button value="See more" class="bg-white px-[1.5em] py-5 rounded-[10px] border-[2px] border-gray-200"/>
         </div>
     </div>
 </template>
