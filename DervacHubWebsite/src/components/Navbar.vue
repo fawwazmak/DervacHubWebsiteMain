@@ -32,7 +32,7 @@ export default defineComponent({
 
                 
                     <li class="py-4 cursor-pointer"><router-link to="/fellowshipPage">Fellowship</router-link></li>
-                    <li class="py-4 cursor-pointer">Training</li>
+                    <li class="py-4 cursor-pointer"><router-link to="/trainingPage">Training</router-link></li>
                     <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
                         <div class="flex gap-4 w-fit mx-auto">
                             <p>Collaborate</p>
