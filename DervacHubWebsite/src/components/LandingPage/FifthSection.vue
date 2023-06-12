@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <section id="fifth-section" class="h-fit lg:px-16 px-10 py-20  w-full">
+    <section id="fifth-section" class="h-fit lg:px-24 md:px-10 px-8 py-20  w-full">
         <div class="space-y-6">
             <div class="space-y-4 lg:w-[70%] md:w-full">
                 <p class="lg:text-5xl md:text-4xl text-sm text-red-600 font-bold">Training Schedules</p>
