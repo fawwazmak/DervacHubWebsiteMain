@@ -51,7 +51,7 @@ export default defineComponent({
                                         </div>
                                     </div> 
                                     
-                                    <p class="">Sponsor</p>
+                                    <p class=""><router-link to="/collaborate/sponsor">Sponsor</router-link></p>
                                 </div>
 
                                 <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
@@ -65,15 +65,15 @@ export default defineComponent({
                                         </div>
                                     </div> 
                                         
-                                    <p class="">Partner with us</p>
+                                    <p class=""><router-link to="/collaborate/partner">Partner with us</router-link></p>
                                 </div>
 
                                 <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
                             </div>
                     </div>
-                    <li class="py-4 cursor-pointer">FAQS</li>
-                    <li class="py-4 cursor-pointer">Testimonials</li>
-                    <li class="py-4 cursor-pointer">Contact Us</li>
+                    <li class="py-4 cursor-pointer"><router-link to="/faqs">FAQS</router-link></li>
+                    <li class="py-4 cursor-pointer"><router-link to="/testimonials">Testimonials</router-link></li>
+                    <li class="py-4 cursor-pointer"><router-link to="/contact">Contact Us</router-link></li>
 
 
                     <div id="buttons" class="lg:flex gap-8 space-x-8 lg:space-x-0 py-4 lg:py-0">
@@ -99,4 +99,8 @@ export default defineComponent({
 </template>
 
 
-<style></style>
+<style>
+    .router-link-active {
+        color: red;
+    }
+</style>
