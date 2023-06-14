@@ -21,6 +21,31 @@ const router = createRouter({
             name: 'Training',
             component: () => import ('./components/MainTrainingPage.vue')
         },
+        {
+            path: '/testimonials',
+            name: 'Testimonials',
+            component: () => import ('./components/TestimonialPage/MainTestimonialPage.vue')
+        },
+        {
+            path: '/collaborate/sponsor',
+            name: 'Collaborate-sponsor',
+            component: () => import ('./components/collaboratePage/MainSponsorPage.vue'),
+        },
+        {
+            path: '/collaborate/partner',
+            name: 'Collaborate-partner',
+            component: () => import ('./components/collaboratePage/MainPartnerPage.vue'),
+        },
+        {
+            path: '/faqs',
+            name: 'Faqs',
+            component: () => import ('./components/FAQS/MainFaqsPage.vue'),
+        },
+        {
+            path: '/contact',
+            name: 'ContactUs',
+            component: () => import ('./components/CONTACTUS/MainContactUsPage.vue'),
+        },
     ]
 })
 

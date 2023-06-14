@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <section id="sixth-section" class="overflow-hidden h-[100vh] px-16 py-20 w-full grid grid-cols-2 gap-10 bg-[whitesmoke] max-[1285px]:grid-cols-1 max-[1285px]:items-center max-[1285px]:h-fit">
+    <section id="sixth-section" class="overflow-hidden h-[100vh] md:px-24 px-8 py-20 w-full grid grid-cols-2 gap-10 bg-[whitesmoke] max-[1285px]:grid-cols-1 max-[1285px]:items-center max-[1285px]:h-fit">
         <div class="flex flex-col gap-8 max-[1285px]:items-center">
             <p class="lg:text-5xl font-black text-[#224C75]">Build a successful tech career without tuition until you are hired</p>
             <p class="lg:text-xl text-[gray]">At Dervac, we believe that everyone deserves the opportunity to pursue their dreams without the burden of the debt. That's why we've created a program that puts you in control of your education and career</p>

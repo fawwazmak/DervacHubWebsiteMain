@@ -36,6 +36,7 @@ export default function elementStores() {
             showWeekday: false,
             showExecutive: false,
             showAnswer: false,
+            learnMoreBgBlue: true, 
         })
     })()
 }
