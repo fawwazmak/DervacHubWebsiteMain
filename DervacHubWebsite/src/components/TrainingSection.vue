@@ -3,7 +3,7 @@ import { defineComponent } from 'vue';
 
 
 export default defineComponent({
-    props: ['field']
+    props: ['field'],
 
 })
 </script>

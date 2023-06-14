@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <section id="fifth-section" class="h-fit lg:px-16 px-10 py-20  w-full">
+    <section id="fifth-section" class="h-fit lg:px-24 md:px-10 px-8 py-20  w-full">
         <div class="space-y-6">
             <div class="space-y-4 lg:w-[70%] md:w-full">
                 <p class="lg:text-5xl md:text-4xl text-sm text-red-600 font-bold">Training Schedules</p>
@@ -65,6 +65,9 @@
                             <p class="text-gray-500">Our Remote Session allows students to participate in classes and workshops from the comfort of their own homes.</p>
                         </div>
                     </div>
+
+
+
                     <!-- fourth trainingSchedules -->
                     <div class="w-full space-y-4 p-6" :class="showWeekday ? 'bg-[#FEF3F2] p-6 rounded-xl' : 'bg-transparent'">
                         <div class="w-full flex justify-between">
@@ -78,6 +81,10 @@
                             <p class="text-gray-500">Our Weekdays Session is designed for students who have a more flexible schedule during the week.</p>
                         </div>
                     </div>
+
+
+
+                    
                     <!-- fifth trainingSchedules -->
                     <div class="w-full space-y-4 p-6" :class="showExecutive ? 'bg-[#FEF3F2] p-6 rounded-xl' : 'bg-transparent'">
                         <div class="w-full flex justify-between">

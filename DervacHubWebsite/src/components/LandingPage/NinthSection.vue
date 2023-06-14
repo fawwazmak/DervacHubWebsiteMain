@@ -8,7 +8,7 @@ export default defineComponent({
 
 
 <template>
-    <div class="flex flex-col gap-10 mt-16">
+    <div class="flex flex-col gap-10 mt-16 md:px-24 px-8">
         <p class="text-[#757f8d] font-semibold sm:text-[18px] text-center">Industries where our students work</p>
         <div class="grid grid-cols-5 w-[85%] mx-auto items-center gap-12">
             <img class="" src="./images/washington-logo.svg" alt="">
