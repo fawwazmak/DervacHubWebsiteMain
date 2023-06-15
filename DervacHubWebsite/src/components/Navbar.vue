@@ -35,7 +35,7 @@ export default defineComponent({
                     <li class="py-4 cursor-pointer"><router-link to="/trainingPage">Training</router-link></li>
                     <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
                         <div class="flex gap-4 w-fit mx-auto">
-                            <p>Collaborate</p>
+                            <p :class="dropCollaborateOptions ? 'text-red-600' : 'text-[#224c75]'">Collaborate</p>
                             <img src="../assets/images/collaborate-arrow.svg" alt="">
                         </div>
                     </li>
