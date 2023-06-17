@@ -36,7 +36,11 @@ export default function elementStores() {
             showWeekday: false,
             showExecutive: false,
             showAnswer: false,
-            learnMoreBgBlue: true, 
+            learnMoreBgBlue: true,
+            changeHireColor: false,
+            changeApplyNowColor: false,
+            drop: false,
+            dropCollaborateOptions: false,
         })
     })()
 }

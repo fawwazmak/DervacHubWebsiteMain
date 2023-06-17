@@ -9,7 +9,7 @@ export default defineComponent({
 
 
 <template>
-    <button class="px-6 py-[12px]">{{ value }}</button>
+    <button class="w-fit h-fit">{{ value }}</button>
 </template>
 
 
