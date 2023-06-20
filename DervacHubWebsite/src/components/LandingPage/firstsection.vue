@@ -15,13 +15,16 @@ export default defineComponent({
     <!-- blue #f2f6fb -->
     <!-- purple #f3e0e5 -->
 
-    <div class="flex lg:flex-row relative flex-col text-center lg:text-left md:gap-20 gap-8 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:pb-36 md:pt-16 md:px-24 px-8 items-center font-sans">
+    <div class="flex lg:flex-row flex-col text-center relative lg:text-left md:gap-20 gap-8 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:pb-36 md:pt-16 md:px-24 px-8 items-center font-sans">
+        
+        <!-- The first div containing mainly the text -->
         <div class="flex flex-col gap-8">
             <div class="relative">
                 <div class="lg:flex lg:flex-col">
                     <p class="main-text font-extrabold min-[330px]:text-[40px] text-[25px] text-[#224c75] z-10">Learn, innovate and Thrive in the</p>
                     <p class="text-[#d82e21] main-text font-extrabold min-[330px]:text-[40px] text-[25px]">Digital World!</p>
 
+                    <!-- The slant avatar images -->
                     <div class="flex flex-row bg-white w-fit py-3 pl-3 pr-6 rounded-[10px] lg:mx-0 mx-auto lg:absolute rotate-in-my-way top-[80px] lg:shadow-2xl right-[-30px] 2xl:right-28 z-10">
                         <img src="./images/Avatar.svg" alt="" class="flex-none">
                         <img src="./images/Avatar-1.svg" alt="" class="flex-none">
@@ -34,17 +37,25 @@ export default defineComponent({
 
             <p class="text-[#224c75] md:text-[20px] text-[15px] z-10">Unlock your Digital potential with cutting-edge Traning in our Technology Hub </p>
 
+
+            <!-- The button imported from another file -->
             <div class="flex gap-12 md:flex-row flex-col md:w-fit w-full mx-auto lg:mx-0">
-                <component is="Button" value="Become a tech expert" class="min-[1170px]:text-[15px] text-[12px]  min-[1237px]:text-[18px] md:w-fit w-full px-8 rounded-[10px] py-5 bg-[#224c75] text-white"></component>
+                <component is="Button" value="Become a tech expert" class="min-[1170px]:text-[15px] text-[12px]  min-[1237px]:text-[17px] md:w-fit w-full px-8 rounded-[10px] py-5 bg-[#224c75] text-white"></component>
                 <component is="Button" value="Testimonials" class="min-[1170px]:text-[15px] text-[12px] min-[1237px]:text-[18px] md:w-fit w-full px-8 rounded-[10px] py-5 border border-[2px] text-[#344054]"></component>
 
                 <!-- max-[1285px]:items-center -->
             </div>
+
+            <!-- The red curve below  -->
+            <img src="./images/red-curve.svg" alt="" class="absolute bottom-0 left-0">
         </div>
 
 
-        <div class="flex gap-4 md:flex-row flex-col-reverse z-40">
-            <div class="bg-white flex flex-col gap-2 rounded-[10px] shadow-2xl">
+        <!-- The second div containing the two images  -->
+        <div class="flex gap-4 md:flex-row flex-col-reverse">
+
+            <!-- Smiling lady image side -->
+            <div class="bg-white flex flex-col gap-2 rounded-[10px] shadow-2xl z-40">
                 <div>
                     <img src="./images/smiling-girl-in-hero-section.svg" alt="" class="w-[100%] rounded-t-[10px]">
                 </div>
@@ -56,7 +67,8 @@ export default defineComponent({
                 </div>
             </div>
 
-            <div class="bg-white flex flex-col gap-2 rounded-[10px] shadow-2xl">
+            <!-- Mr Anjorin's image side  -->
+            <div class="bg-white flex flex-col gap-2 rounded-[10px] shadow-2xl z-40">
                 <div>
                     <img src="./images/mrAnjorin-image.svg" alt="" class="w-[100%] rounded-t-[10px]">
                 </div>
@@ -67,13 +79,10 @@ export default defineComponent({
                     <p class="italic mt-2"><q>Get trained and mentored by industry experts</q></p>
                 </div>
             </div>
-        </div>
 
-        <img src="./images/blue-curve.svg" alt="" class="absolute blue z-0">
-
-        <img src="./images/red-curve.svg" alt="" class="absolute red">
-
-        
+            <!-- The blue curve beside the two images -->
+            <img src="./images/blue-curve.svg" alt="" class="absolute right-0 hidden sm:block lg:top-20 w-[500px] lg:h-[400px]">
+        </div>        
     </div>
 
 </template>
@@ -115,10 +124,6 @@ export default defineComponent({
             margin-right: -340px;
             margin-top: -95px;
         }
-    }
-
-    .red {
-        bottom: 0;
     }
 
     @media (max-width: 1282) {
