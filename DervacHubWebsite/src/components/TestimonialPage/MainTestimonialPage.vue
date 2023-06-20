@@ -15,7 +15,7 @@ export default defineComponent({
 <template>
     <div class="pb-16">
         <!-- This is the div for the first section. Start the first section here -->
-        <div>
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
 
         </div>
 
