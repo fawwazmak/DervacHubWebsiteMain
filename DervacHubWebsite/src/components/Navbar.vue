@@ -1,6 +1,9 @@
 <script>
 import { defineComponent } from 'vue';
-import Button from './Button.vue'
+import Button from './Button.vue';
+import elementStore from '../stores/store';
+// import elementStores from '../../stores/store';
+
 
 
 export default defineComponent({
@@ -9,14 +12,15 @@ export default defineComponent({
         return {
             drop: false,
             dropCollaborateOptions: false,
+            Hire: elementStore().$state.changeHireColor,
         }
-    }
+    }, 
 })
 </script>
 
 
 <template>
-    <header class="bg-white px-8 py-4 rounded-xl">
+    <header class="bg-white px-8 py-4 rounded-xl ">
             <nav class="flex justify-between items-center text-center lg:space-x-24 relative lg:static">  
             <!-- dervac Logo -->
 
@@ -35,7 +39,7 @@ export default defineComponent({
                     <li class="py-4 cursor-pointer"><router-link to="/trainingPage">Training</router-link></li>
                     <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
                         <div class="flex gap-4 w-fit mx-auto">
-                            <p>Collaborate</p>
+                            <p :class="dropCollaborateOptions ? 'text-red-600' : 'text-[#224c75]'">Collaborate</p>
                             <img src="../assets/images/collaborate-arrow.svg" alt="">
                         </div>
                     </li>
@@ -75,14 +79,16 @@ export default defineComponent({
                     <li class="py-4 cursor-pointer"><router-link to="/testimonials">Testimonials</router-link></li>
                     <li class="py-4 cursor-pointer"><router-link to="/contact">Contact Us</router-link></li>
 
+                <!-- hire and apply now button -->
 
-                    <div id="buttons" class="lg:flex gap-8 space-x-8 lg:space-x-0 py-4 lg:py-0">
-                        <component is="Button" value="Hire" class="border border-2 border-gray-300 rounded-xl text-[#224c75]"></component>
-                        <component is="Button" value="Apply Now" class="bg-[#224c75] rounded-xl text-white"></component>
+                    <div id="buttons" class="lg:flex gap-8 space-x-8 lg:space-x-0 py-4 lg:py-0 items-center">
+                        <component is="Button" value="Hire" @click="" :class="Hire ? 'bg-[#224c75] rounded-xl text-white' : 'border border-2 border-gray-300 rounded-xl text-[#224c75] py-3 px-5'"></component>
+                        <component is="Button" value="Apply Now" :class="Hire ? 'bg-[#224c75] rounded-xl text-white' : 'border border-2 border-gray-300 rounded-xl text-[#224c75] py-3 px-4'"></component>
+
+                        <!-- bg-[#224c75] rounded-xl text-white -->
                     </div>
                 </div>
 
-                <!-- hire and apply now button -->
 
                 
 

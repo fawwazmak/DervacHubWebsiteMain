@@ -1,5 +1,6 @@
 <script>
 import { defineComponent } from 'vue';
+
 import Fourth from './Fourth.vue';
 
 
@@ -13,9 +14,11 @@ export default defineComponent({
 
 
 <template>
+
     <div>
         <Fourth/>
     </div>
+
 </template>
 
 
