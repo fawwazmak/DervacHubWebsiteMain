@@ -17,22 +17,27 @@ export default defineComponent({
     <div class="bg-white pb-16">
 
         <!-- first section starts -->
-        <div class="flex lg:flex-row flex-col text-center lg:text-left md:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-12 md:px-20 px-8 font-sans w-full">
-            <div class="flex flex-col gap-8">
+        <div class="flex lg:flex-row flex-col relative text-center lg:text-left lg:gap-20 gap-0 bg-gradient-to-tl from-[#f2f6fb] to-[#f3e0e5] py-8 md:py-12 lg:pb-28 justify-between md:px-20 px-8 font-sans w-full items-center">
+            <div class="flex flex-col gap-8 lg:w-[40%] w-full">
                 <p class="md:text-[42px] font-extrabold sm:text-[30px] text-[#224c75]">Our <span class="text-[#d82e21]">training program</span> will help you secure a future in tech</p>
 
                 <p class="text-[#224c75] md:text-[16px] text-[15px]">Our Fellowship program is a 8 months intensive tech program through an agile delivery methodology, mentor matching, and leadership modules that equips young people with the skills and resources to launch and grow successful careers in tech and be able to work competitively in any global team.</p>
 
-                <div class="md:block hidden">
+                <div class="lg:block hidden">
                     <component is="Button" value="Join now" class="text-[15px] md:text-[18px] px-8 rounded-[10px] py-5 bg-[#224c75] text-white">Join now</component>
                 </div>
             </div>
 
-            <img src="./training-hero-image.svg" alt="">
-
-            <div class="md:hidden">
+            <div>
+                <img src="./training-hero-image.svg" alt="" class="z-50 mb-0">
+                <img src="./LandingPage/images/blue-curve.svg" alt="" class="absolute right-0 top-0 lg:block hidden">
+            </div>
+            <div class="lg:hidden mb-32 w-full">
                     <component is="Button" value="Join now" class="text-[15px] w-full px-8 rounded-[10px] py-5 bg-[#224c75] text-white">Join now</component>
-            </div>            
+            </div>   
+            
+            <img src="./fellowshipPage/images/red-curve.svg" alt="" class="absolute bottom-0 lg:left-0">
+            
         </div>
 
 
