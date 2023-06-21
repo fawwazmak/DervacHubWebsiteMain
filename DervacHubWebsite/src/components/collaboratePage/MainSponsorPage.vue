@@ -1,10 +1,12 @@
 <script>
 import { defineComponent } from 'vue';
-import sectionTwoSponsor from './section-two.vue'
+import sectionTwoSponsor from './section-two.vue';
+import Fourth from './Fourth.vue';
+import FirstSection from './FirstSection.vue';
 
 
 export default defineComponent({
-    components: {sectionTwoSponsor}
+    components: {sectionTwoSponsor, Fourth, FirstSection}
 })
 </script>
 
@@ -13,7 +15,9 @@ export default defineComponent({
 
 
 <template>
-    <sectionTwoSponsor />    
+    <FirstSection />
+    <sectionTwoSponsor />
+    <Fourth />
 </template>
 
 
