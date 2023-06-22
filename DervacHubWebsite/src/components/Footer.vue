@@ -13,15 +13,19 @@ export default defineComponent({
     <footer class="text-[#224c75] flex flex-col gap-0 pb-12 items-center bg-blue-100">
 
         <div class="flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between pt-8 md:p-20 w-full">
-                <!-- this is for the logo, social-media handle and the copywright for desktop view. This will show only on desktop width upward-->
+            <!-- this is for the logo, social-media handle and the copywright for desktop view. This will show only on desktop width upward-->
+            
             <div id="logo-and-social-media-handles" class="md:flex flex-col md:space-y-5 hidden">
                 <div class="flex flex-col space-y-2">
 
                     <!-- logo -->
-                    <div class="flex">
-                        <img src="../assets/images/dervac-main-logo.svg" alt="">
-                        <img src="../assets/images/logo-complement.svg" alt="">
-                    </div>
+
+                    <router-link to="/">
+                        <div class="flex">
+                            <img src="../assets/images/dervac-main-logo.svg" alt="">
+                            <img src="../assets/images/logo-complement.svg" alt="">
+                        </div>
+                    </router-link>
 
                     <!-- social-media-links -->
                     <div class="flex space-x-9">
@@ -42,15 +46,15 @@ export default defineComponent({
             <ul class="flex flex-col space-y-2 md:text-left text-center">
                 <li class="md:text-[18px] text-[22px] font-bold">Services</li>
                 <li><router-link to="/fellowshipPage">Fellowship</router-link></li>
-                <li>Training</li>
-                <li>Testiminials</li>
+                <li><router-link to="/trainingPage">Training</router-link></li>
+                <li><router-link to="/testimonials">Testimonials</router-link></li>
                 <li>Hire</li>
             </ul>
-            
+            <!-- http://localhost:5173/collaborate/sponsor -->
             <ul class="flex flex-col space-y-2 md:text-left text-center">
                 <li class="md:text-[18px] text-[22px] font-bold">Grow with Dervac</li>
-                <li>Sponsor a student</li>
-                <li>Become a partner</li>
+                <li> <router-link to="/collaborate/sponsor">Sponsor a student</router-link> </li>
+                <li> <router-link to="/collaborate/sponsor">Become a partner</router-link> </li>
                 <li>Our student work</li>
                 <li>Start your application</li>
             </ul>
