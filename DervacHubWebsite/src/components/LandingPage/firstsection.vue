@@ -40,8 +40,8 @@ export default defineComponent({
 
             <!-- The button imported from another file -->
             <div class="flex gap-12 md:flex-row flex-col md:w-fit w-full mx-auto lg:mx-0">
-                <component is="Button" value="Become a tech expert" class="min-[1170px]:text-[15px] text-[12px]  min-[1237px]:text-[17px] md:w-fit w-full px-8 rounded-[10px] py-5 bg-[#224c75] text-white"></component>
-                <component is="Button" value="Testimonials" class="min-[1170px]:text-[15px] text-[12px] min-[1237px]:text-[18px] md:w-fit w-full px-8 rounded-[10px] py-5 border border-[2px] text-[#344054]"></component>
+                <component is="Button" value="Become a tech expert" class="min-[1170px]:text-[15px] text-[12px]  min-[1237px]:text-[17px] md:w-fit w-full px-8 rounded-[10px] py-5 bg-[#102539] hover:bg-transparent hover:border hover:border-2 hover:border-gray-300 hover:text-[#224c75] text-white"></component>
+                <component is="Button" value="Testimonials" class="min-[1170px]:text-[15px] text-[12px] min-[1237px]:text-[18px] md:w-fit w-full px-8 rounded-[10px] py-5 hover:bg-[#102539] hover:border-0 hover:text-white border border-[2px] text-[#344054]"></component>
 
                 <!-- max-[1285px]:items-center -->
             </div>

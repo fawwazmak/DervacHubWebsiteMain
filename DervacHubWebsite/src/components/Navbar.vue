@@ -11,7 +11,7 @@ export default defineComponent({
     data() {
         return {
             drop: false,
-            dropCollaborateOptions: false,
+            dropAboutUsOptions: false,
             Hire: elementStore().$state.changeHireColor,
         }
     }, 
@@ -25,67 +25,152 @@ export default defineComponent({
             <!-- dervac Logo -->
 
                 <router-link to="/">
-                    <div id="logo" class="flex cursor-pointer md:w-[100%] h-full">
+                    <div id="logo" class="flex  md:w-[100%] h-full" @click="() => { drop = false;}">
                         <img src="./LandingPage/images/logo-complement-removebg-preview.png" alt="" class="md:w-[20%] w-[30px]">
                         <img src="./LandingPage/images/dervac-main-logo-removebg-preview.png" alt="" class="md:w-[88%] w-[90px]">
                     </div>
                 </router-link>
+
+
+
                 <!-- links to other pages -->
 
                 <div id="links" class="lg:flex list-none justify-between text-[14px] lg:gap-8 font-medium text-[#224c75] lg:relative lg:top-[0px] lg:left-[0px] absolute top-[70px] w-full lg:bg-white bg-[#f4dde2] rounded-xl lg:rounded-[0] z-50" :class="!drop ? 'left-[-1400px]' : 'left-[0]'" transition-right duration-900>
 
                 
-                    <li class="py-4 cursor-pointer"><router-link to="/fellowshipPage">Fellowship</router-link></li>
-                    <li class="py-4 cursor-pointer"><router-link to="/trainingPage">Training</router-link></li>
-                    <li class="py-4 cursor-pointer relative" @click="() => { dropCollaborateOptions = !dropCollaborateOptions}">
-                        <div class="flex gap-4 w-fit mx-auto">
-                            <p :class="dropCollaborateOptions ? 'text-red-600' : 'text-[#224c75]'">Collaborate</p>
-                            <img src="../assets/images/collaborate-arrow.svg" alt="">
+                    <li class="py-4 "><router-link to="/fellowshipPage" @click="() => { dropAboutUsOptions = false}">Fellowship</router-link></li>
+                    <li class="py-4 "><router-link to="/trainingPage" @click="() => { dropAboutUsOptions = false}">Training</router-link></li>
+                    <li class="py-4 "><router-link to="/collaborate/sponsor" @click="() => { dropAboutUsOptions = false}">Collaborate</router-link></li>
+
+
+                    <!-- <li class="py-4 "><router-link to="/faqs" @click="() => { dropAboutUsOptions = false}">FAQS</router-link></li> -->
+
+                    <li class="py-4  relative" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                        <div class="flex gap-4 w-fit mx-auto cursor-pointer">
+                            <p :class="dropAboutUsOptions ? 'text-red-600' : 'text-[#224c75]'">About us</p>
+                            <img src="../assets/images/collaborate-arrow.svg" alt="" v-show="!dropAboutUsOptions">
+                            <img src="../assets/images/red-drop-arrow.svg" v-show="dropAboutUsOptions" /> 
                         </div>
                     </li>
 
 
-                    <!-- subdivision of the collaborate page -->
-                    <div class="bg-[#f7f7f7] flex flex-col justify-between md:absolute md:left-64 top-[56px] rounded-xl p-4" v-show="dropCollaborateOptions">
-                            <div class="flex justify-between gap-4 p-4 text-black rounded-xl hover:bg-blue-100 px-4 cursor-pointer">
-                                <div class="flex gap-2 items-center">
-                                    <div class="bg-gray-200 p-2 rounded-[50%]">
+
+                    
+                    <!-- subdivision of the about page -->
+                    
+                    <div class="bg-[#f7f7f7] flex flex-col justify-between md:absolute md:left-64 top-[56px] lg:rounded-xl sm:p-4" v-show="dropAboutUsOptions">
+                        <router-link to="/collaborate/sponsor">
+                            <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
+                                <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                                    <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
                                         <div>
-                                            <img src="../assets/images/sponsor-icon.svg" alt="">
+                                            <img src="../assets/images/history-icon.svg" alt="">
                                         </div>
                                     </div> 
                                     
-                                    <p class=""><router-link to="/collaborate/sponsor">Sponsor</router-link></p>
+                                    <p class="">History</p>
                                 </div>
 
                                 <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
                             </div>
+                        </router-link>
 
-                            <div class="flex justify-between gap-4 p-4 text-black rounded-xl hover:bg-blue-100 px-4 cursor-pointer">
-                                <div class="flex gap-2 items-center">
-                                    <div class="bg-gray-200 p-2 rounded-[50%]">
+                        <div class="w-full h-[2px] bg-black opacity-30"></div>
+
+                        <router-link to="/collaborate/partner">
+                            <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
+                                <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                                    <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
                                         <div>
-                                            <img src="../assets/images/partner-icon.svg" alt="">
+                                            <img src="../assets/images/Team-icon.svg" alt="">
                                         </div>
                                     </div> 
                                         
-                                    <p class=""><router-link to="/collaborate/partner">Partner with us</router-link></p>
+                                    <p class="">Team</p>
                                 </div>
 
                                 <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
                             </div>
+                        </router-link>
+
+                        <div class="w-full h-[2px] bg-black opacity-30"></div>
+
+
+                        <router-link to="/collaborate/sponsor">
+                            <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
+                                <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                                    <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
+                                        <div>
+                                            <img src="../assets/images/Faqs-icon.svg" alt="">
+                                        </div>
+                                    </div> 
+                                    
+                                    <p class="">FAQS</p>
+                                </div>
+
+                                <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
+                            </div>
+                        </router-link>
+
+                        <div class="w-full h-[2px] bg-black opacity-30"></div>
+
+
+
+                        <router-link to="/collaborate/sponsor">
+                            <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
+                                <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                                    <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
+                                        <div>
+                                            <img src="../assets/images/career-icon.svg" alt="">
+                                        </div>
+                                    </div> 
+                                    
+                                    <p class="">Career</p>
+                                </div>
+
+                                <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
+                            </div>
+                        </router-link>
+
+                        <div class="w-full h-[2px] bg-black opacity-30"></div>
+
+
+
+                        <router-link to="/testimonials">
+                            <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
+                                <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
+                                    <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
+                                        <div>
+                                            <img src="../assets/images/testimonial-icon.svg" alt="">
+                                        </div>
+                                    </div> 
+                                    
+                                    <p class="">Testimonials</p>
+                                </div>
+
+                                <img src="../assets/images/forward-arrow-in-collaborate.svg" alt="">
+                            </div>
+                        </router-link>
                     </div>
-                    <li class="py-4 cursor-pointer"><router-link to="/faqs">FAQS</router-link></li>
-                    <li class="py-4 cursor-pointer"><router-link to="/testimonials">Testimonials</router-link></li>
-                    <li class="py-4 cursor-pointer"><router-link to="/contact">Contact Us</router-link></li>
+
+
+
+
+                    <!-- Navbar continues  -->
+
+                    <!-- <li class="py-4 "><router-link to="/testimonials" @click="() => { dropAboutUsOptions = false}">Testimonials</router-link></li> -->
+                    <li class="py-4 "><router-link to="/contact" @click="() => { dropAboutUsOptions = false}">Contact Us</router-link></li>
 
                 <!-- hire and apply now button -->
 
-                    <div id="buttons" class="lg:flex gap-8 space-x-8 lg:space-x-0 py-4 lg:py-0 items-center">
-                        <component is="Button" value="Hire" @click="" :class="Hire ? 'bg-[#224c75] rounded-xl text-white' : 'border border-2 border-gray-300 rounded-xl text-[#224c75] py-3 px-5'"></component>
-                        <component is="Button" value="Apply Now" :class="Hire ? 'bg-[#224c75] rounded-xl text-white' : 'border border-2 border-gray-300 rounded-xl text-[#224c75] py-3 px-4'"></component>
+                    <div id="buttons" class="lg:flex gap-8 space-x-8 space-y-4 lg:space-y-0 lg:space-x-0 py-4 lg:py-0 items-center" @click="() => { dropAboutUsOptions = false}">
 
-                        <!-- bg-[#224c75] rounded-xl text-white -->
+                        <component is="Button" value="Hire" class="border border-2 border-gray-300 rounded-[8px] text-[#224c75] py-3 px-6 hover:bg-[#102539] hover:border-0 hover:text-white"></component>
+                        <component is="Button" value="Apply Now" class="bg-[#102539] text-white relative left-[-15px] rounded-[8px] py-3 px-6 hover:bg-white hover:border hover:border-2 hover:border-gray-300 hover:text-[#224c75]"></component>
+
+                        <!-- #102539 -->
+                        <!-- bg-gradient-to-tl from-[#102539] to-[#193959] -->
+                        <!--  -->
                     </div>
                 </div>
 
@@ -100,7 +185,11 @@ export default defineComponent({
                 </div>
             </nav>
 
-            <div class="lg:hidden absolute bg-black h-screen w-screen left-[-14px] opacity-40 top-20" v-show="drop" @click="() => drop = !drop"></div>
+            <div class="lg:hidden absolute bg-black h-screen w-screen left-[-14px] opacity-40 top-16" v-show="drop" @click="() => drop = !drop"></div>
+
+
+            <!-- The black background for the about sub links in the navbar -->
+        <div class="w-screen left-[-15px] top-[86px] h-screen mx-auto absolute bg-gray-50 opacity-30" v-show="dropAboutUsOptions" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}"></div>
     </header>
 </template>
 

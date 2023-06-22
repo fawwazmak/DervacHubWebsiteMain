@@ -19,7 +19,7 @@ export default defineComponent({
 
             <p class="text-[#224c75] md:text-[20px] text-[18px]">Interesred in inspiring the next generation of top Tech talent? Collaborate with us. We are commited to help as many young people to kickstart a career in technology by providing them with access to quality technicial education by the real world experts.</p>
             <div class="lg:block hidden z-40">
-                <component is="ButtonVue" value="Join" class="text-[15px] md:text-[18px] px-8 rounded-[10px] py-5 bg-[#224c75] text-white">Join</component>
+                <component is="ButtonVue" value="Join" class="text-[15px] md:text-[18px] px-8 rounded-[10px] py-5 bg-[#102539] text-white">Join</component>
             </div>
         </div>
 
