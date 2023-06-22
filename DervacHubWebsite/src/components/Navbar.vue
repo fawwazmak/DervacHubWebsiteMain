@@ -59,7 +59,7 @@ export default defineComponent({
                     <!-- subdivision of the about page -->
                     
                     <div class="bg-[#f7f7f7] flex flex-col justify-between md:absolute md:left-64 top-[56px] lg:rounded-xl sm:p-4" v-show="dropAboutUsOptions">
-                        <router-link to="/collaborate/sponsor">
+                        <router-link to="/history&team">
                             <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
                                 <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
                                     <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
@@ -77,7 +77,7 @@ export default defineComponent({
 
                         <div class="w-full h-[2px] bg-black opacity-30"></div>
 
-                        <router-link to="/collaborate/partner">
+                        <router-link to="/history&team">
                             <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
                                 <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
                                     <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
