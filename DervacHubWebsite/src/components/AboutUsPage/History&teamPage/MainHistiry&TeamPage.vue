@@ -1,10 +1,10 @@
 <script>
 import { defineComponent } from 'vue';
-import SixthSection from '../../LandingPage/TenthSection.vue'
-
+import SixthSection from '../../LandingPage/TenthSection.vue';
+import ThirdSection from './ThirdSection.vue';
 
 export default defineComponent({
-    components: {SixthSection},
+    components: { SixthSection, ThirdSection, },
     props: []
 })
 </script>
@@ -18,6 +18,7 @@ export default defineComponent({
     <!-- #f2f9ff -->
     
     <div>
+        <ThirdSection />
 
         <SixthSection />
     </div>
