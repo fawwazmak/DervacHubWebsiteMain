@@ -159,7 +159,10 @@ export default defineComponent({
 
         <div class="text-center">
             <!-- <button class="bg-gray-200 px-[1.5em] py-[0.5em] font-bold rounded-[5px]" >See more</button> -->
-            <Button value="See more" class="bg-white px-[1.5em] py-5 rounded-[10px] border-[2px] border-gray-200"/>
+            <router-link to="/history&team">
+                <Button value="See more" class="bg-white px-[1.5em] py-5 rounded-[10px] border-[2px] border-gray-200"/>
+            </router-link>
+
         </div>
     </div>
 </template>
