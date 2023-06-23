@@ -12,6 +12,8 @@ export default defineComponent({
 
 
 <template>
+
+    <!-- bg-gradient from-blue-500 via-purple-500 -->
     <!-- #f3dee3 -->
     <!-- #f2f9ff -->
     
