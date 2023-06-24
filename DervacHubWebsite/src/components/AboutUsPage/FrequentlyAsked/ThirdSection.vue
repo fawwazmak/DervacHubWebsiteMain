@@ -16,14 +16,16 @@ export default defineComponent({
 
 
 <template>
-    <div class="font-sans bg-[#f9fafb] mx-32 rounded-[10px] py-8 text-center flex flex-col items-center">
-        <div>
-
+    <div class="font-sans bg-[#f9fafb] mx-32 rounded-[10px] py-10 text-center flex flex-col gap-8 items-center">
+        <div class="flex">
+            <img src="../images/Avatar.svg" alt="" class="">
+            <img src="../images/Avatar (1).svg" alt="" class="ml-[-15px] z-10 mt-[-8px]">
+            <img src="../images/Avatar (2).svg" alt="" class="ml-[-15px]">
         </div>
 
-        <div class="flex flex-col items-center">
-            <p>still have question</p>
-            <p>Can't find the answer you are looking for? Please contact us.</p>
+        <div class="flex flex-col items-center gap-4">
+            <p class="font-bold text-[20px] text-[#4a515d]">Still have questions?</p>
+            <p class="text-[#8a929e] text-[18px]">Can't find the answer you are looking for? Please contact us.</p>
             <Button value="Get in touch" class="bg-gradient-to-r from-[#132b42] to-[#1d4266] rounded-[5px] text-white py-3 px-5 md:block hidden "/>
         </div>
     </div>
