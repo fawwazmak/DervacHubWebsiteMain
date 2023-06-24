@@ -39,7 +39,7 @@ const router = createRouter({
         {
             path: '/faqs',
             name: 'Faqs',
-            component: () => import ('./components/FAQS/MainFaqsPage.vue'),
+            component: () => import ('./components/AboutUsPage/FrequentlyAsked/MainFaqsPage.vue'),
         },
         {
             path: '/contact',

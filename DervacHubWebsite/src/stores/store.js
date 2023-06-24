@@ -105,7 +105,8 @@ export default function elementStores() {
                     position: 'Tech Assistant', 
                     imageUrl: '../images/AvatarInTeam.svg', 
                 },
-            ]
+            ],
+            showAnswerInMainPage: false,
         })
     })()
 }

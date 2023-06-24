@@ -10,7 +10,7 @@ export default defineComponent({
 
 
 <template>
-    <footer class="text-[#224c75] flex flex-col gap-0 pb-12 items-center bg-blue-100">
+    <footer class="text-[#224c75] flex flex-col gap-0 pb-12 items-center bg-blue-100 font-sans">
 
         <div class="flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between pt-8 md:p-20 w-full">
             <!-- this is for the logo, social-media handle and the copywright for desktop view. This will show only on desktop width upward-->
@@ -101,4 +101,10 @@ export default defineComponent({
 </template>
 
 
-<style></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+</style>

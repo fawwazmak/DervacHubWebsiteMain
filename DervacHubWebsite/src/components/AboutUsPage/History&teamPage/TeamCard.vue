@@ -26,7 +26,7 @@ export default defineComponent({
 
 
 <template>
-    <div class="bg-[#f9fafb] w-fit py-4 px-6 flex flex-col gap-2 items-center text-center sm:text-[16px] text-[10px]">
+    <div class="bg-[#f9fafb] w-fit py-4 px-6 flex flex-col gap-2 items-center text-center sm:text-[16px] text-[10px] fpnt-sans">
         <div>
             <img src="../images/AvatarInTeam.svg" alt="">
         </div>
@@ -43,4 +43,10 @@ export default defineComponent({
 </template>
 
 
-<style></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+</style>
