@@ -85,7 +85,7 @@ export default defineComponent({
                     </div>
 
                     <!-- social-media-links -->
-                    <div class="flex justify-between">
+                    <div class="flex justify-between w-full">
                         <img src="../assets/images/facebook-logo 1.svg" alt="">
                         <img src="../assets/images/Instagram-logo.svg" alt="">
                         <img src="../assets/images/twitter-logo.svg" alt="">
