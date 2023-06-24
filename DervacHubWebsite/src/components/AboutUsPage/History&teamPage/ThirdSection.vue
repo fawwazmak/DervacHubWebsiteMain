@@ -18,7 +18,7 @@ export default defineComponent({
 
 
 <template>
-    <section class="grid md:grid-cols-2 bg-[#f2f9ff] items-center sm:px-24 px-8 py-20 gap-10">
+    <section class="grid md:grid-cols-2 bg-[#f2f9ff] items-center sm:px-24 px-8 py-20 gap-10 font-sans">
         <div class="flex flex-col gap-6 md:text-left text-center">
             <p class="text-[40px] font-bold text-[#224c75]">History</p>
             <p class="text-[#475467] md:text-[20px] text-[16px]">Dervac HUB is an initiative of Dervac Global Services Ltd non-profit partnership program that authorizes global universities and colleges to deliver industry-recognized Huawei Certification courses to students. This program acts as a bridge between enterprises and academy to build a talent ecosystem for ICT industry. It has been designed to deliver industry standard training and certification courses required by employers. Access to these courses will prepare students with the latest and practical skills to work in ICT industry, making them more employable and helping them kick start their careers.</p>
@@ -42,7 +42,7 @@ export default defineComponent({
         <Button value="Join us now" class="bg-gradient-to-r from-[#132b42] to-[#1d4266] rounded-[5px] text-white py-3 px-5 w-full md:hidden"/>
     </section>
 
-    <section class="bg-white sm:px-24 px-8 py-20">
+    <section class="bg-white sm:px-24 px-8 py-20 font-sans">
         <div class="text-center flex flex-col items-center gap-8 ">
             <div class="sm:w-[60%] w-full">
                 <p class="font-bold sm:text-[35px] text-[25px]">Meet our team </p>
@@ -75,4 +75,10 @@ export default defineComponent({
 </template>
 
 
-<style></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+</style>

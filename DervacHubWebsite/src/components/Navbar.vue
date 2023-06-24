@@ -20,7 +20,7 @@ export default defineComponent({
 
 
 <template>
-    <header class="bg-white px-8 py-4 rounded-xl ">
+    <header class="bg-white px-8 py-4 rounded-xl font-sans">
             <nav class="flex justify-between items-center text-center lg:space-x-24 relative lg:static">  
             <!-- dervac Logo -->
 
@@ -96,7 +96,7 @@ export default defineComponent({
                         <div class="w-full h-[2px] bg-black opacity-30"></div>
 
 
-                        <router-link to="/collaborate/sponsor">
+                        <router-link to="/faqs">
                             <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
                                 <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
                                     <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
@@ -195,6 +195,11 @@ export default defineComponent({
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    .font-sans {
+        font-family: 'Inter', sans-serif;
+    }
     .router-link-active {
         color: red;
     }
