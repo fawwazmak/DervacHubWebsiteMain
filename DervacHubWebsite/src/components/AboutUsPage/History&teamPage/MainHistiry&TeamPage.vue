@@ -17,7 +17,7 @@ export default defineComponent({
     <!-- #f3dee3 -->
     <!-- #f2f9ff -->
     
-    <div>
+    <div class="bg-white pb-16">
         <ThirdSection />
 
         <SixthSection />
