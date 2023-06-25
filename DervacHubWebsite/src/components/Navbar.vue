@@ -116,7 +116,7 @@ export default defineComponent({
 
 
 
-                        <router-link to="/collaborate/sponsor">
+                        <router-link to="/Career">
                             <div class="flex justify-between gap-4 sm:py-4 py-2 text-black sm:rounded-xl hover:bg-blue-100 sm:px-4 ">
                                 <div class="flex gap-2 items-center" @click="() => { dropAboutUsOptions = !dropAboutUsOptions}">
                                     <div class="bg-gray-200 p-2 rounded-[50%] sm:block hidden">
