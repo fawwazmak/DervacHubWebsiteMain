@@ -51,6 +51,11 @@ const router = createRouter({
             name: 'History&TeamPage',
             component: () => import ('./components/AboutUsPage/History&teamPage/MainHistiry&TeamPage.vue'),
         },
+        {
+            path: '/Career',
+            name: 'CareerPage',
+            component: () => import ('./components/AboutUsPage/CareerPage/MainCareerPage.vue'),
+        },
     ]
 })
 
