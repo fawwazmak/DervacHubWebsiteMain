@@ -2,9 +2,10 @@
 import { defineComponent } from 'vue';
 import SixthSection from '../../LandingPage/TenthSection.vue';
 import ThirdSection from './ThirdSection.vue';
+import OneSection from './firstSection.vue'
 
 export default defineComponent({
-    components: { SixthSection, ThirdSection, },
+    components: { SixthSection, ThirdSection, OneSection},
     props: []
 })
 </script>
@@ -18,6 +19,7 @@ export default defineComponent({
     <!-- #f2f9ff -->
     
     <div class="bg-white pb-16">
+        <OneSection />
         <ThirdSection />
 
         <SixthSection />
