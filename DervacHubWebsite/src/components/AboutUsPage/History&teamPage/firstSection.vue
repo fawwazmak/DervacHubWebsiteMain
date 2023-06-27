@@ -1,6 +1,6 @@
 <script></script>
 <template>
-    <div class="w-full flex flex-col gap-[1rem] items-center justify-between p-[1rem] text-center">
+    <div class="w-full flex flex-col gap-[1rem] items-center justify-between p-[1rem] pt-[4rem] text-center bg-gradient-to-br from-blue-100 via-white via-white via-white to-pink-200">
         <h1 class="text-[40px] font-[700]">About</h1>
         <p>Hear form some of our amazing Students</p>
         <div class="flex w-[100%] gap-[1rem] lg:flex-row flex-col">
@@ -23,4 +23,5 @@
         </div>
     </div>
 </template>
-<style scoped></style>
+<style scoped>
+</style>

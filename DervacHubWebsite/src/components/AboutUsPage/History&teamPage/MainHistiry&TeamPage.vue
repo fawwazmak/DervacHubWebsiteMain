@@ -3,9 +3,9 @@ import { defineComponent } from 'vue';
 import SixthSection from '../../LandingPage/TenthSection.vue';
 import ThirdSection from './ThirdSection.vue';
 import OneSection from './firstSection.vue'
-
+import SecondSection from './secondSection.vue'
 export default defineComponent({
-    components: { SixthSection, ThirdSection, OneSection},
+    components: { SixthSection, ThirdSection, OneSection, SecondSection},
     props: []
 })
 </script>
@@ -20,6 +20,7 @@ export default defineComponent({
     
     <div class="bg-white pb-16">
         <OneSection />
+        <SecondSection />
         <ThirdSection />
 
         <SixthSection />
