@@ -1,8 +1,9 @@
 <script>
 import { defineComponent } from 'vue';
+import LastSection from '../../LandingPage/TenthSection.vue'
 
 export default defineComponent({
-    components: { },
+    components: { LastSection},
     props: [],
 })
 </script>
@@ -11,6 +12,8 @@ export default defineComponent({
 <template>
 
     <div class="">
+
+       <LastSection /> 
     </div>
 </template>
 
