@@ -39,12 +39,27 @@ const router = createRouter({
         {
             path: '/faqs',
             name: 'Faqs',
-            component: () => import ('./components/FAQS/MainFaqsPage.vue'),
+            component: () => import ('./components/AboutUsPage/FrequentlyAsked/MainFaqsPage.vue'),
         },
         {
             path: '/contact',
             name: 'ContactUs',
             component: () => import ('./components/CONTACTUS/MainContactUsPage.vue'),
+        },
+        {
+            path: '/history&team',
+            name: 'History&TeamPage',
+            component: () => import ('./components/AboutUsPage/History&teamPage/MainHistiry&TeamPage.vue'),
+        },
+        {
+            path: '/Career',
+            name: 'CareerPage',
+            component: () => import ('./components/AboutUsPage/CareerPage/MainCareerPage.vue'),
+        },
+        {
+            path: '/Apply',
+            name: 'ApplyNowPage',
+            component: () => import ('./components/ApplyNowPage/MainApplyPage.vue'),
         },
     ]
 })

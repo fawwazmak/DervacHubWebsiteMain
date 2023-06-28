@@ -1,11 +1,12 @@
 <script>
 import { defineComponent } from 'vue';
 import TestimonialCard from './TestimonialCard.vue';
-import TenthSection from '../LandingPage/TenthSection.vue'
+import TenthSection from '../LandingPage/TenthSection.vue';
+import FirstSectionToReuse from '../FirstSectionToReuse.vue';
 
 
 export default defineComponent({
-    components: {TestimonialCard, TenthSection},
+    components: {TestimonialCard, TenthSection, FirstSectionToReuse},
 })
 </script>
 
@@ -13,16 +14,21 @@ export default defineComponent({
 
 
 <template>
-    <div class="pb-16">
+    <div class="pb-16 bg-white">
         <!-- This is the div for the first section. Start the first section here -->
+<<<<<<< HEAD
         <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
 
+=======
+        <div>
+            <FirstSectionToReuse  heading="Testimonials" caption="Hear from some of our amazing students"/>
+>>>>>>> afabb75af61da8216754ac44b37b50f2f00dedb6
         </div>
 
 
 
         <!-- Second section begins here -->
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-12 mx-4 min-[175px]:mx-8 md:mx-16 lg:mx-28">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-12 mx-4 min-[175px]:mx-8 md:mx-16 lg:mx-28 pt-20 bg-white">
             <TestimonialCard  name="Fellow Olatunji" skill="Web dev., Google"/>
             <TestimonialCard  name="Fellow Olatunji" skill="Web dev., Google"/>
             <TestimonialCard  name="Fellow Olatunji" skill="Web dev., Google"/>

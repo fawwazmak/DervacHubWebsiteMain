@@ -72,7 +72,7 @@ export default defineComponent({
         </div>
     </section> -->
 
-    <div class="md:w-[50%] md:px-0 px-6 md:mx-auto py-16 flex flex-col gap-12">
+    <div class="md:w-[50%] md:px-0 px-6 md:mx-auto py-16 flex flex-col gap-12 font-sans">
         <div class="text-center">
             <p class="font-extra8old md:text-[40px] text-[25px]">Frequently asked questions</p>
             <p class="sm:text-[15px]">Everything you need to know about Dervac</p>
@@ -159,7 +159,18 @@ export default defineComponent({
 
         <div class="text-center">
             <!-- <button class="bg-gray-200 px-[1.5em] py-[0.5em] font-bold rounded-[5px]" >See more</button> -->
-            <Button value="See more" class="bg-white px-[1.5em] py-5 rounded-[10px] border-[2px] border-gray-200"/>
+            <router-link to="/faqs">
+                <Button value="See more" class="bg-white px-[1.5em] py-5 rounded-[10px] border-[2px] border-gray-200"/>
+            </router-link>
+
         </div>
     </div>
 </template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+</style>

@@ -41,6 +41,77 @@ export default function elementStores() {
             changeApplyNowColor: false,
             drop: false,
             dropCollaborateOptions: false,
+            team: [
+                { 
+                    id: 1,
+                    name: 'Muhsin Anjorin',
+                    based: "Senior Software Developer", 
+                    position: 'Director', 
+                    imageUrl: '../images/AvatarInTeam.svg'
+                },
+
+                { 
+                    id: 2,
+                    name: 'Luqman AbdurRahman',
+                    based: "Senior FrontEnd Developer", 
+                    position: 'Supervisor', 
+                    imageUrl: '../images/AvatarInTeam.svg'
+                },
+
+                { 
+                    id: 3,
+                    name: 'Olawore Emmanuel',
+                    based: "Senior Software Developer", 
+                    position: 'Manager', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+
+                { 
+                    id: 4,
+                    name: 'AbdulAzeez AbdulGaniy',
+                    based: "Senior Software Developer", 
+                    position: 'Assistant Director', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+
+                { 
+                    id: 5,
+                    name: 'Miss Esther',
+                    based: "UI/UX Designer", 
+                    position: 'Head Director', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+
+                { 
+                    id: 6,
+                    name: 'Agba Coder',
+                    based: "Senior Software Developer", 
+                    position: 'Inspector', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+
+                { 
+                    id: 7,
+                    name: 'Alfa Zakariyya',
+                    based: "Manager", 
+                    position: 'Head Director', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+
+                { 
+                    id: 8,
+                    name: 'Sanni AbdulHameed',
+                    based: "Senior Software Developer", 
+                    position: 'Tech Assistant', 
+                    imageUrl: '../images/AvatarInTeam.svg', 
+                },
+            ],
+            showAnswerInMainPage: false,
+            onPage: true,
+            nextPage: true,
+            nextAfterPage: true,
+            Apply: 1,
+            ApplyPageShow: true,
         })
     })()
 }
