@@ -107,6 +107,11 @@ export default function elementStores() {
                 },
             ],
             showAnswerInMainPage: false,
+            onPage: true,
+            nextPage: true,
+            nextAfterPage: true,
+            Apply: 1,
+            ApplyPageShow: true,
         })
     })()
 }
