@@ -1,19 +1,19 @@
 <script>
 import { defineComponent } from 'vue';
-import LastSection from '../../LandingPage/TenthSection.vue'
+import middle from './Middle.vue';
+import LastSection from '../../LandingPage/TenthSection.vue';
 
 export default defineComponent({
-    components: { LastSection},
+    components: { LastSection, middle },
     props: [],
 })
 </script>
 
 
 <template>
-
     <div class="">
-
-       <LastSection /> 
+      <middle />
+      <LastSection /> 
     </div>
 </template>
 
