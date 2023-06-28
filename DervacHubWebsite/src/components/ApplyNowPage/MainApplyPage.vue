@@ -69,8 +69,8 @@ export default defineComponent({
                 <div class="flex items-center gap-4">
                     <div class="flex flex-col items-center">
                         <div>
-                            <img src="./images/dot-next-page.svg" alt="" v-if="secondPage">
-                            <img src="./images/check-on-page.svg" alt="" v-else>
+                            <img src="./images/check-on-page.svg" alt="" v-if="currentPage >= 2">
+                            <img src="./images/dot-next-page.svg" alt="" v-else>
                         </div>
                         <img src="./images/Connector.svg" alt="">
                     </div>
@@ -86,9 +86,9 @@ export default defineComponent({
                 <div class="flex items-center gap-4">
                     <div class="flex flex-col items-center">
                         <div>
-                            <img src="./images/dot-not-yet-there.svg" alt="" v-if="thirdPageUpper">
-                            <img src="./images/dot-next-page.svg" alt="" v-show="!thirdPageUpper">
-                            <img src="./images/check-on-page.svg" alt="" v-if="!thirdPageUpper">
+                            <img src="./images/check-on-page.svg" alt="" v-if="currentPage >= 3">
+                            <img src="./images/dot-next-page.svg" alt="" v-if="currentPage == 2">
+                            <img src="./images/dot-not-yet-there.svg" alt="" v-show="currentPage == 1">
                         </div>
                         <img src="./images/Connector.svg" alt="">
                     </div>
@@ -104,9 +104,9 @@ export default defineComponent({
                 <div class="flex items-center gap-4">
                     <div class="flex flex-col items-center">
                         <div>
-                            <img src="./images/dot-not-yet-there.svg" alt="" v-if="fourthPageUpper">
-                            <img src="./images/dot-next-page.svg" alt="" v-show="!fourthPageUpper">
-                            <img src="./images/check-on-page.svg" alt="" v-if="!fourthPageUpper">
+                            <img src="./images/check-on-page.svg" alt="" v-if="currentPage == 4">
+                            <img src="./images/dot-next-page.svg" alt="" v-if="currentPage == 3">
+                            <img src="./images/dot-not-yet-there.svg" alt="" v-show="currentPage < 3">
                         </div>
                         <!-- <img src="./images/Connector.svg" alt=""> -->
                     </div>
