@@ -1,10 +1,10 @@
 <script>
 import { defineComponent } from 'vue';
 import middle from './Middle.vue';
-import LastSection from '../../LandingPage/TenthSection.vue'
+import LastSection from '../../LandingPage/TenthSection.vue';
 
 export default defineComponent({
-    components: { middle, LastSection},
+    components: { LastSection, middle },
     props: [],
 })
 </script>
@@ -12,8 +12,8 @@ export default defineComponent({
 
 <template>
     <div class="">
-        <middle/>
-        <LastSection />
+      <middle />
+      <LastSection /> 
     </div>
 </template>
 
