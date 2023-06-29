@@ -17,7 +17,9 @@ export default defineComponent({
         <p class="">Join over 4,000+ students already growing with Dervac</p>
         <div class="flex gap-4 md:flex-row flex-col md:w-fit w-full">
             <component is="Button" class="bg-white text-[#11263b] py-2 px-4 rounded-[5px]" value="Learn more">Learn more</component>
-            <component is="Button" class="bg-[#224C75] py-2 px-4 rounded-[5px]" value="Join now">Join now</component>
+            <router-link to="/career">
+                <component is="Button" class="bg-[#224C75] py-2 px-4 rounded-[5px]" value="Join now">Join now</component>
+            </router-link>
         </div>
 
         <img src="./images//left.svg" alt="" class="absolute top-0 left-0" />
