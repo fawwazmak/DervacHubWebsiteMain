@@ -16,13 +16,8 @@ export default defineComponent({
 <template>
     <div class="pb-16 bg-white">
         <!-- This is the div for the first section. Start the first section here -->
-<<<<<<< HEAD
-        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
-
-=======
         <div>
             <FirstSectionToReuse  heading="Testimonials" caption="Hear from some of our amazing students"/>
->>>>>>> afabb75af61da8216754ac44b37b50f2f00dedb6
         </div>
 
 

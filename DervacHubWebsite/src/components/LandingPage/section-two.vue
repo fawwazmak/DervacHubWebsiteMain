@@ -19,14 +19,22 @@
                     </div>
                     <div class="flex lg:justify-between justify-center lg:gap-[3rem] md:gap-[2rem] lg:flex-row flex-col gap-[2rem] relative z-[0]">
                         <div class="flex flex-col gap-[1rem] rounded-[20px] bg-[#FFF2F8] p-[2rem] max-[425px]:text-center max-[425px]:items-center">
-                            <h1 class="lg:text-[36px] md:text-[26px] sm:text-[16px] text-[#224C75]">Regular Training</h1>
+                                <h1 class="lg:text-[36px] md:text-[26px] sm:text-[16px] text-[#224C75]">Regular Training</h1>
                             <p class="text-[#475467]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, doloremque magnam officia mollitia consequatur numquam dolor deserunt quod modi ut asperiores obcaecati aperiam quas, reiciendis at alias perferendis. Eligendi, assumenda!</p>
-                            <a class="p-[0.7rem] w-fit rounded-[10px] border-[2px] text-[#224C75] border-[solid] border-[#224C75]" href="#">Learn more</a>
+                            <router-link to="/trainingPage">
+                                <a class="p-[0.7rem] w-fit rounded-[10px] border-[2px] text-[#224C75] border-[solid] border-[#224C75]" href="">Learn more</a>
+                            </router-link>                            
+                            
                         </div>
+
+                        
                         <div class="flex flex-col gap-[1rem] rounded-[20px] bg-[#F4F6FD] p-[2rem] items-start max-[425px]:text-center max-[425px]:items-center">
-                            <h1 class="text-[36px] text-[#224C75]">Fellowship</h1>
+                                <h1 class="text-[36px] text-[#224C75]">Fellowship</h1>
                             <p class="text-[#475467]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, doloremque magnam officia mollitia consequatur numquam dolor deserunt quod modi ut asperiores obcaecati aperiam quas, reiciendis at alias perferendis. Eligendi, assumenda!</p>
-                            <a class="p-[0.7rem] w-fit rounded-[10px] border-[2px] text-[#224C75]  border-[solid] border-[#224C75]" href="#">Learn more</a>
+                            <router-link to="/fellowshipPage">
+                                <a class="p-[0.7rem] w-fit rounded-[10px] border-[2px] text-[#224C75]  border-[solid] border-[#224C75]" href="">Learn more</a>
+                            </router-link>
+                            
                         </div>
                     </div>
                 </div>

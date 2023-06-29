@@ -61,9 +61,9 @@ export default defineComponent({
 
             <ul class="flex flex-col space-y-2 md:text-left text-center">
                 <li class="md:text-[18px] text-[22px] font-bold">Resources</li>
-                <li>About us</li>
-                <li>FAQS</li>
-                <li>Career</li>
+                <li><router-link to="/history&team">About us</router-link></li>
+                <li> <router-link to="/faqs">FAQS</router-link> </li>
+                <li> <router-link to="/Career">Career</router-link> </li>
             </ul>
 
             <!-- <ul class="flex flex-col space-y-2 md:text-left text-center">

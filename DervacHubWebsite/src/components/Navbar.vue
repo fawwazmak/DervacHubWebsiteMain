@@ -164,10 +164,10 @@ export default defineComponent({
                 <!-- hire and apply now button -->
 
                     <div id="buttons" class="lg:flex gap-8 space-x-8 space-y-4 lg:space-y-0 lg:space-x-0 py-4 lg:py-0 items-center" @click="() => { dropAboutUsOptions = false}">
-                        <component is="Button" value="Hire" class="border border-2 border-gray-300 rounded-[8px] text-[#224c75] py-3 px-6 hover:bg-[#102539] hover:border-0 hover:text-white"></component>
+                        <component is="Button" value="Hire" class="border border-2 border-gray-300 rounded-[8px] text-[#224c75] py-3 px-6 hover:border-gray-700 hover:text-red-600"></component>
 
                         <router-link to="/Apply">
-                            <component is="Button" value="Apply Now" class="bg-[#102539] text-white relative left-[-15px] rounded-[8px] py-3 px-6 hover:bg-white hover:border hover:border-2 hover:border-gray-300 hover:text-[#224c75]"></component>
+                            <component is="Button" value="Apply Now" class="bg-[#102539] text-white relative left-[-15px] rounded-[8px] py-3 px-6 hover:text-red-600"></component>
                         </router-link>
 
                         <!-- #102539 -->
