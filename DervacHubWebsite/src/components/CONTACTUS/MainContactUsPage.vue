@@ -1,9 +1,11 @@
 <script>
 import { defineComponent } from 'vue';
+import FirstSection from '../FirstSectionToReuse.vue'
 
 
 
 export default defineComponent({
+    components: {FirstSection},
 data(){
     return{
         policy: true,
@@ -41,11 +43,16 @@ watch :{
 </script>
 <template>
 <div>
-    <div class="relative bg-gradient-to-l from-[#f2f6fb] to-[#f3e0e5] h-[400px] flex flex-col gap-[15px] justify-center items-center">
+    <!-- <div class="relative bg-gradient-to-l from-[#f2f6fb] to-[#f3e0e5] h-[400px] flex flex-col gap-[15px] justify-center items-center">
         <p class="text-[48px] font-semibold text-[#101828]">We'd love to hear from you</p>
         <p class="text-[#475467] text-[20px]">Our friendly team is always here to help</p>
         <img class="absolute bottom-0 left-[-17rem] w-[45rem]" src="../../assets/red-curve.svg" alt="">
-    </div>
+    </div> -->
+
+    <!-- first section  -->
+    <FirstSection  heading="We'd love to hear from you" caption="Our friendly team is always here to help you"/>
+
+
     <div class="bg-white px-[7rem] pt-[96px] pb-[64px]">
         <div>
             <iframe class="w-full rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.83478311593!2d3.3660175744806367!3d6.5425369229428885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8dbcd0415555%3A0x41966d71e94e14b!2sDervac%20Global%20Services%20Ltd!5e0!3m2!1sen!2sng!4v1688124987635!5m2!1sen!2sng" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
