@@ -18,7 +18,7 @@ export default defineComponent({
         <div class="flex gap-4 md:flex-row flex-col md:w-fit w-full">
             <component is="Button" class="bg-white text-[#11263b] py-2 px-4 rounded-[5px]" value="Learn more">Learn more</component>
             <router-link to="/career">
-                <component is="Button" class="bg-[#224C75] py-2 px-4 rounded-[5px]" value="Join now">Join now</component>
+                <component is="Button" class="bg-[#224C75] py-2 px-4 rounded-[5px] md:w-fit w-full" value="Join now">Join now</component>
             </router-link>
         </div>
 
