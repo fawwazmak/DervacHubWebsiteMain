@@ -147,6 +147,7 @@ export default defineComponent({
 
 
             <Button value="Continue" v-show="currentPage <= 4" class="bg-gradient-to-tr from-[#17334f] text-white to-[#1c3e5f] w-full py-4 text-medium text-[17px] rounded-[8px]" @click="currentPage++"/>
+            <input type="submit" value="" class="bg-gradient-to-tr from-[#17334f] text-white to-[#1c3e5f] w-full py-4 text-medium text-[17px] rounded-[8px]" v-show="currentPage == 5">
         </div>
     </div>
 
@@ -268,6 +269,7 @@ export default defineComponent({
 
 
             <Button value="Continue" v-show="currentPage <= 4" class="bg-gradient-to-tr from-[#17334f] text-white to-[#1c3e5f] w-full py-4 text-medium text-[17px] rounded-[8px]" @click="currentPage++"/>
+            <input type="submit" value="" class="bg-gradient-to-tr from-[#17334f] text-white to-[#1c3e5f] w-full py-4 text-medium text-[17px] rounded-[8px]" v-show="currentPage == 5">
         </div>
     </div>
 </template>
