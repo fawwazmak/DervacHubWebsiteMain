@@ -4,6 +4,8 @@ import SixthSection from '../../LandingPage/TenthSection.vue';
 import ThirdSection from './ThirdSection.vue';
 import OneSection from './firstSection.vue'
 import SecondSection from './secondSection.vue'
+
+
 export default defineComponent({
     components: { SixthSection, ThirdSection, OneSection, SecondSection},
     props: []
